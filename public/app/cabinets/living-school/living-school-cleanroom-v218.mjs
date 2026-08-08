@@ -1,6 +1,6 @@
 import{copy,state,VERSION,clean}from'./living-school-cleanroom-core-v218.mjs';
 import{render}from'./living-school-cleanroom-render-v218.mjs';
-import{actions,generateCurriculumFromData}from'../../living-school-cleanroom-actions-v243.mjs?v=source-sanitize-gemini-v256';
+import{actions,generateCurriculumFromData}from'../../living-school-cleanroom-actions-v243.mjs?v=research-ladder-v259';
 
 let busy=false,dispatchCount=0;
 const LEVELS=new Set(['beginner','intermediate','advanced']);
@@ -60,5 +60,5 @@ async function generateCurriculumFromChat(input={}){
 
 document.addEventListener('click',handleLivingSchoolClick,true);
 render();
-globalThis.LivingSchoolCleanroomV218=Object.freeze({version:VERSION,controller:'single-delegated-click-handler',researchAdapter:'downloaded-knowledge-v256-sanitized',getState:()=>copy(state()),render,dispatchCount:()=>dispatchCount,generateCurriculumFromChat,normalizeChatCurriculum:chatCurriculumData,legacyNavigation:false});
+globalThis.LivingSchoolCleanroomV218=Object.freeze({version:VERSION,controller:'single-delegated-click-handler',researchAdapter:'live-local-synthesis-v259',getState:()=>copy(state()),render,dispatchCount:()=>dispatchCount,generateCurriculumFromChat,normalizeChatCurriculum:chatCurriculumData,legacyNavigation:false});
 try{dispatchEvent(new CustomEvent('civweave:living-school-workbench-ready',{detail:{version:VERSION,chatCurriculumBridge:true}}))}catch{}
